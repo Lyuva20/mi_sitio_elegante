@@ -3,6 +3,7 @@ let banner = document.getElementById("banner__header");
 let titulo = document.getElementById("banner__titulo");
 let parrafo = document.getElementById("banner__parrafo");
 let boton = document.getElementById("banner__boton");
+
 let diapositivas = [
     {
     colorFondo: "#2E81F4",
@@ -43,3 +44,4 @@ function actualizarDiapositiva() {
 
 
 actualizarDiapositiva();
+
