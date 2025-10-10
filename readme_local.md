@@ -23,3 +23,7 @@ maquetar: se utilizó para realizar los cambios relacionados con el documento JS
 modificar: resto de modificaciones del proyecto, principalmente HTML y CSS. 
 
 ## Fork a un compañero: 
+
+Se realizo un Pull Request al compañero Jorge añadiendo comentarios identificativos en el HTML. 
+
+! [Captura del Pull Request] (img/pull.jpg)
