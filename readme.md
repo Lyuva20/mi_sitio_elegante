@@ -1,0 +1,1 @@
+Enlace al layout elegido: https://www.elegantthemes.com/layouts/simple/simple-home-page/live-demo
