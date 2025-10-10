@@ -1,8 +1,10 @@
 :root {
 
 --fuente: 'Open Sans', sans-serif;
---colorFondo: white;
---colorFuente: white;
+--colorFondo: #FFFFFF;
+--colorFuente: #FFFFFF;
+--colorBanner2: #F7F7F7;
+--colorBannerFont: #333333;
 
 }
 

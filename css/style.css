@@ -1,4 +1,7 @@
 
+
+/*Header*/ 
+
 body {
     
     margin: 0;
@@ -13,7 +16,7 @@ body {
 
     padding: 40px;
     text-align: center;
-    min-height: 200px;
+    min-height: 300px;
     margin: 50px;
     
 
@@ -66,3 +69,29 @@ body {
 
 }
 
+/*Segundo contenedor*/
+
+.banner__segundo{
+
+    background-color: var(--colorBanner2);
+    padding: 40px;
+    text-align: center;
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    
+    
+
+}
+
+.segundo--titulo{
+
+    color: var(--colorBannerFont);
+    font-size: 30px;
+    font-weight: lighter;
+    width: 600px;
+
+    
+
+}
