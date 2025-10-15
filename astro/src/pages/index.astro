@@ -1,0 +1,93 @@
+---
+	import Layouts from "../layouts/layouts.astro"
+	import { Image } from 'astro:assets';
+		import bocadillo from '../images/bocadillo.jpg';
+		import gps from '../images/gps.jpg';
+		import page from '../images/page.jpg';
+		import rayitas from '../images/rayitas.jpg';
+
+
+---
+
+
+<Layouts>
+
+
+
+    <!--Header-->
+
+    <header id="banner__header">
+    
+        <h2 id="banner__titulo"></h2>
+        <p id="banner__parrafo"></p>
+        <button id="banner__boton">Enter</button>
+
+        <div id="banner__clic">
+            <button id="clic__izquierda">←</button>
+            <button id="clic__derecha">→</button>
+        </div>
+
+    </header>
+
+    <main>
+
+    <!--Segundo contenedor-->
+
+        <div class="banner__segundo">
+
+            <h2 class="segundo--titulo">We Are a Company of Passionate Designers and Developers</h2>
+
+        </div>
+
+    <!--Iconos-->
+
+        <section class="contenedor__iconos">
+
+            <div class="contenedor__divs">
+
+
+				<Image src={page} alt="Icono de página"/>
+                <h3 class="divs--titulo">Lorem Ipsum</h3>
+                <p class="divs--parrafo">Divi will change the way you build websites forever. The advanced page builder makes it possible to build truly dynamic pages without learning code.</p>
+
+            </div>
+
+            <div class="contenedor__divs">
+                
+				<Image src={gps} alt="Icono gps"/>
+                <h3>Lorem Ipsum</h3>
+                <p>Divi will change the way you build websites forever. The advanced page builder makes it possible to build truly dynamic pages without learning code.</p>
+
+            </div>
+
+            <div class="contenedor__divs">
+                
+				<Image src={bocadillo} alt="Icono de bocadillo"/>
+                <h3>Lorem Ipsum</h3>
+                <p>Divi will change the way you build websites forever. The advanced page builder makes it possible to build truly dynamic pages without learning code.</p>
+
+            </div>
+
+            <div class="contenedor__divs">
+                
+				<Image src={rayitas} alt="Icono volumen"/>
+                <h3>Lorem Ipsum</h3>
+                <p>Divi will change the way you build websites forever. The advanced page builder makes it possible to build truly dynamic pages without learning code.</p>
+
+            </div>
+
+        </section>
+    
+    <!--Último contenedor-->
+
+        <div class="ultimo__contenedor">
+    
+            <h2 class="ultimo__titulo">Drop Me a Line</h2>
+            <p class="ultimo__parrafo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in risus eget lectus suscipit malesuada. Maecenas ut urna mollis, aliquam eros at, laoreet metus.</p>
+            <button class="ultimo__boton">Contact</button>
+
+        </div>
+
+    </main>
+    
+</Layouts>
