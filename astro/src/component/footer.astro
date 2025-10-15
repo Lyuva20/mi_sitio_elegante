@@ -1,0 +1,78 @@
+---
+import "../styles/style.css"
+import "../styles/variables.css"
+import { Image } from 'astro:assets';
+		import facebook from '../images/facebook.jpg';
+        import twitter from '../images/twitter.jpg';
+        import rss from '../images/rss.jpg';
+
+
+---
+
+<footer class="footer">
+
+    <h2 class="footer__titulo">
+        Designed by Elegant Themes | Powered by WordPress
+    </h2>
+
+    <div class="footer__iconos">
+        <a href="#"> 
+            <Image src={facebook} alt="Icono de facebook"/>
+        </a>
+        <a href="#">
+        <Image src={twitter} alt="Icono de twitter"/>
+        </a>
+        <a href="#">
+        <Image src={rss} alt="Icono de rss"/>
+        </a>
+    </div>
+
+</footer>
+
+<style>
+
+.footer {
+
+    background-color: var(--colorFooter);
+    color: var(--colorTextoFooter);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    }
+
+    .footer__titulo{
+
+    font-size: 15px;
+
+    }
+
+
+    .footer__iconos{
+
+    margin-left: 40px;
+    padding-left:50px;
+
+    }
+
+    .footer__iconos a {
+
+    margin-left: 20px;
+    cursor: pointer;
+    display: inline-block;
+    
+
+    }
+
+    
+    .footer__iconos img {
+
+    width: 30px;
+    height: 30px;
+    display: block;
+
+    }
+
+
+</style>

@@ -1,0 +1,89 @@
+---
+import "../styles/style.css"
+import "../styles/variables.css"
+
+---
+
+<div class="nav">
+
+    <div class="nav__titulo">
+        <h2>Simple Shop Page Live Demo</h2>
+    </div>
+
+    <nav class="nav__menu">
+
+        <ul>
+
+            <li><a href="/">Home</a></li>
+            <li><a href="/shop">Shop</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/contacto">Contact Us</a></li>
+
+        </ul>
+
+    </nav>
+
+</div>
+
+
+
+<style>
+
+
+    .nav {
+
+    color: var(--colorNav);
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: var(--colorFondo);
+    border-bottom: 1px solid var(--bottonNav);
+
+
+    }
+
+
+    .nav__titulo h2 {
+
+    font-weight: 700;
+    font-size: 25px;
+    margin: 0 0 20px 0;
+
+    }
+
+    
+    .nav__menu ul {
+
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px; 
+    justify-content: space-evenly;
+
+    }
+
+
+    .nav__menu ul li {
+
+    font-weight: 400;
+    
+
+    }
+
+
+    .nav__menu ul li a {
+
+    text-decoration: none;
+    color: var(--colorNav);
+    font-weight: 400;
+    font-size: 16px;
+    cursor: pointer;
+    
+    
+    
+    }
+
+
+</style>

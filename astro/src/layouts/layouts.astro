@@ -1,6 +1,8 @@
 ---
 import "../styles/style.css"
 import "../styles/variables.css"
+import Nav from "../component/nav.astro"
+import Footer from "../component/footer.astro"
 
 ---
 
@@ -18,8 +20,14 @@ import "../styles/variables.css"
 </head>
 <body>
 
+<Nav/>
+
 <slot/>
-    
+
+
+
+<Footer/>
+
 <script src="../js/main.js"></script>
 </body>
 </html>
