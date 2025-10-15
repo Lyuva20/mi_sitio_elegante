@@ -26,4 +26,9 @@ modificar: resto de modificaciones del proyecto, principalmente HTML y CSS.
 
 Se realizo un Pull Request al compañero Jorge añadiendo comentarios identificativos en el HTML. 
 
+
 ! [Captura del Pull Request] (img/pull.jpg)
+
+## Enlace a la publicación: 
+
+https://lyuva20.github.io/mi_sitio_elegante/
