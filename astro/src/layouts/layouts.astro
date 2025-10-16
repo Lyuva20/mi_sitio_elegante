@@ -3,31 +3,26 @@ import "../styles/style.css"
 import "../styles/variables.css"
 import Nav from "../component/nav.astro"
 import Footer from "../component/footer.astro"
+import Head from "../component/head.astro"
 
 ---
 
 <!DOCTYPE html>
+
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Elegante</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/variables.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-</head>
+
+<Head/>
+
 <body>
+    
 
 <Nav/>
 
 <slot/>
 
-
-
 <Footer/>
 
 <script src="../js/main.js"></script>
+
 </body>
 </html>
