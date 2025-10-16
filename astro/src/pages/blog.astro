@@ -1,12 +1,147 @@
 ---
 	import Layouts from "../layouts/layouts.astro"
+	import { Image } from 'astro:assets';
+		import almohada from '../images/blog/almohada.webp';
+		import cereal from '../images/blog/cereal.webp';
+		import chica from '../images/blog/chica.webp';
+		import flores from '../images/blog/flores.webp';
+		import paisaje from '../images/blog/paisaje.webp';
+		import planta from '../images/blog/planta.webp';
 ---
 
 
-<Layouts>
+<Layouts titulo="Welcome to my Blog" parrafo="Here is a masonry blog layout with no sidebar.">
+
+<main>
+
+	<section class="blog__contenedor">
+
+		<div class="blog__div">
+
+			<Image class="div__img" src={cereal} alt="Utensilios para pastelería"/>
+			<h2 class="div__titulo">Nunc Volutpat Venenatis</h2>
+			<h3 class="div__subtitulo">by Nick Roach | May 9, 2014 | Category | 4 Comments</h3>
+			<p class="div__parrafo">Nulla a odio sed magna congue condimentum. Pellentesque convallis enim nec libero vulputate, et rhoncus urna placerat. Phasellus mattis, diam vel vehicula facilisis, erat leo dapibus augue, at mollis tellus ex non nisi. Ut faucibus fringilla semper. Aenean nunc ex,...</p>
+
+		</div>
+
+		<div class="blog__div">
+
+			<Image class="div__img" src={almohada} alt="Almohada con dibujo infantil"/>
+			<h2 class="div__titulo">Vestibulum Nisl Felis</h2>
+			<h3 class="div__subtitulo">by Nick Roach | May 9, 2014 | Category | 5 Comments</h3>
+			<p class="div__parrafo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc aliquam justo et nibh venenatis aliquet. Morbi mollis mollis pellentesque. Aenean vitae erat velit.</p>
+
+		</div>
+
+		
+		<div class="blog__div">
+
+			<Image class="div__img" src={flores} alt="Ramo de flores"/>
+			<h2 class="div__titulo">Proin Eu Augue Efficitur</h2>
+			<h3 class="div__subtitulo">by Nick Roach | May 9, 2014 | Category | 3 Comments</h3>
+			<p class="div__parrafo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc aliquam justo et nibh venenatis aliquet. Morbi mollis mollis pellentesque. Aenean vitae erat velit.</p>
+
+		</div>
+
+		
+		<div class="blog__div">
+
+			<Image class="div__img" src={chica} alt="Mujer con sombrero grande"/>
+			<h2 class="div__titulo">Nam Vulputate Tempus</h2>
+			<h3 class="div__subtitulo">by Nick Roach | May 9, 2014 | Category | 2 Comments</h3>
+			<p class="div__parrafo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc aliquam justo et nibh venenatis aliquet. Morbi mollis mollis pellentesque. Aenean vitae erat velit. Maecenas urna sapien, dignissim a augue vitae, porttitor luctus urna. Morbi scelerisque semper congue. Donec vitae congue quam.</p>
+
+		</div>
+
+		
+		<div class="blog__div">
+
+			<Image class="div__img" src={planta} alt="Plantas en maceta"/>
+			<h2 class="div__titulo">Donec Sit Amet Nibh</h2>
+			<h3 class="div__subtitulo">by Nick Roach | May 9, 2014 | Category | 5 Comments</h3>
+			<p class="div__parrafo">Aenean vitae fringilla metus, sed pellentesque nisl. Morbi quis mi tincidunt, consequat risus et, dapibus magna. In lacinia dictum nunc, non dignissim quam..</p>
+
+		</div>
+
+		
+		<div class="blog__div">
+
+			<Image class="div__img" src={paisaje} alt="Mujer leyendo un libro en la playa"/>
+			<h2 class="div__titulo">Maecenas Fringilla Augue</h2>
+			<h3 class="div__subtitulo">by Nick Roach | May 9, 2014 | Category | 3 Comments</h3>
+			<p class="div__parrafo">Donec vitae congue quam. Pellentesque convallis est a eros porta, ut porttitor magna convallis. Donec quis felis imperdiet, vestibulum est ut, pulvinar dolor.</p>
+
+		</div>
+
+	</section>
 
 
+</main>
 
     
     
 </Layouts>
+
+<style>
+
+	.blog__contenedor{
+
+
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px 5px;
+	background-color: var(--fondoBlog)
+
+	
+
+	}
+
+	.blog__div{
+
+		width: 300px;
+		border: .5px, solid, var(--bordeBlog);
+		background-color: var(--colorFondo);
+		margin: 50px 
+
+	}
+
+	
+	.div__img{
+
+	width: 100%;
+	height: 180px;                 
+	object-fit: cover;             
+	display: block;
+
+	}
+
+	
+	.div__titulo{
+
+	font-size: 20px;
+	line-height: 1.25;
+	margin: 16px 18px 8px;
+	color: var(--textoShop);
+
+	}
+
+	.div__subtitulo{
+
+	color: var(--precioShop);
+	margin: 0 18px 12px;
+	font-size: 15px;
+
+	}
+
+	.div__parrafo{
+
+	
+	color: var(--textoShop);
+	margin: 0 18px 12px ;
+	font-size: 14px;
+
+	}
+
+</style>
