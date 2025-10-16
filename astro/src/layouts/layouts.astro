@@ -21,7 +21,8 @@ const {titulo, parrafo} = Astro.props;
 
 <Nav/>
 
-<Header titulo={titulo} parrafo={parrafo}/>
+{titulo && parrafo ? <Header titulo={titulo} parrafo={parrafo} /> : null}
+
 
 <slot/>
 
