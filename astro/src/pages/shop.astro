@@ -1,5 +1,20 @@
 ---
 	import Layouts from "../layouts/layouts.astro"
+	import { Image } from 'astro:assets';
+		import bolsa from '../images/bolsa.webp';
+		import cojin from '../images/cojin.webp';
+		import jarron from '../images/jarron.webp';
+		import mesa from '../images/mesa.webp';
+		import mini from '../images/mini.webp';
+		import silla from '../images/silla.webp';
+		import tabla from '../images/tabla.webp';
+		import tecno from '../images/tecno.webp';
+		import cinco from '../images/cinco_estrellas.jpg';
+		import dos from '../images/dos_estrellas.jpg';
+		import tres from '../images/tres_estrellas.jpg';
+		import una from '../images/una_estrella.jpg';
+
+
 ---
 
 
@@ -7,13 +22,68 @@
 
 <main>
 
+	<!--Tienda-->
+
+<section class="tienda__contenedor">
+
+	<div class="tienda__div">
+		<Image class="div__img" src={jarron} alt="Jarron en una mesa"/>
+		<h2>Air Plants</h2>
+		<Image src={tres} alt="Tres estrellas"/>
+		<p class="div__precio">£25.00</p>
+	</div>
+
+	<div class="tienda__div">
+		<Image class="div__img" src={cojin} alt="Cojín en un sillón"/>
+		<h2>Cartoon Pillow</h2>
+		<Image src={cinco} alt="Cinco estrellas"/>
+		<p class="div__dto">£25.00</p>
+		<p class="div__ahora">£15.00</p>
+	</div>
+
+	<div class="tienda__div">
+		<Image class="div__img" src={tabla} alt="Tabla de cortar"/>
+		<h2>Cutting Board</h2>
+		<p class="div__precio">£87.00</p>
+	</div>
+
+	<div class="tienda__div">
+		<Image class="div__img" src={tecno} alt="Un movil, unos auriculares y una planta"/>
+		<h2>Designer Headphones</h2>
+		<p class="div__precio">£8.00</p>
+	</div>
+
+	<div class="tienda__div">
+		<Image class="div__img" src={bolsa} alt="Bolsa eco"/>
+		<h2>Earth Friendly Bag</h2>
+		<Image src={dos} alt="Dos estrellas"/>
+		<p class="div__precio">£28.00</p>
+	</div>
+
+	<div class="tienda__div">
+		<Image class="div__img" src={silla} alt="Silla violeta en una sala"/>
+		<h2>Purple Chair</h2>
+		<p class="div__dto">£19.00</p>
+		<p class="div__ahora">£15.00</p>
+	</div>
+
+	<div class="tienda__div">
+		<Image class="div__img" src={mini} alt="Jarrones absurdamente caros"/>
+		<h2>Simple Vase</h2>
+		<p class="div__precio">£200.00</p>
+	</div>
+
+	<div class="tienda__div">
+		<Image class="div__img" src={mesa} alt="Mesa de madera"/>
+		<h2>Wooden Table</h2>
+		<Image src={una} alt="Una estrella"/>
+		<p class="div__precio">£42.00</p>
+	</div>
+
+	
 
 
-
-
-
-
-
+</section>
 
 
 <!--Último contenedor-->
@@ -36,6 +106,67 @@
 
 
 <style>
+
+.tienda__contenedor {
+
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 1em;
+	padding: 2rem;
+
+
+	}
+
+
+.tienda__div {
+
+	padding: 1rem;
+	text-align: left;
+	margin-left: .5px
+
+}
+
+
+.div__img {
+
+	max-width: 100%;
+	height: auto;
+	margin-bottom: 0.5rem;
+	cursor: pointer;
+
+}
+
+.tienda__contenedor h2 {
+
+	font-size: 18px;
+	color: var(--textoShop);
+
+}
+
+.div__precio{
+
+	color: var(--textoShop);
+	font-size: 15px;
+	
+
+}
+
+.div__dto{
+
+	text-decoration: line-through;
+	color: var(--precioShop);
+	font-size: 15px;
+
+}
+
+.div__ahora{
+
+	font-weight: bold;
+	color: var(--textoShop);
+	font-size: 15px;
+}
+
+
 
 .ultimo__contenedor{
 
