@@ -4,6 +4,10 @@ import "../styles/variables.css"
 import Nav from "../component/nav.astro"
 import Footer from "../component/footer.astro"
 import Head from "../component/head.astro"
+import Header from "../component/header.astro"
+
+
+const {titulo, parrafo} = Astro.props;
 
 ---
 
@@ -14,9 +18,10 @@ import Head from "../component/head.astro"
 <Head/>
 
 <body>
-    
 
 <Nav/>
+
+<Header titulo={titulo} parrafo={parrafo}/>
 
 <slot/>
 

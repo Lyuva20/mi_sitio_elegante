@@ -1,0 +1,52 @@
+---
+
+const {titulo, parrafo} = Astro.props;
+
+import "../styles/style.css"
+import "../styles/variables.css"
+
+---
+
+
+
+<section class="titulo__header" >
+
+    <h2>{titulo}</h2>
+    <p>{parrafo}</p>
+
+</section>
+
+
+
+<style>
+
+    .titulo__header {
+
+        background: var(--colorBannerFondo);
+        color: var(--colorFuente);
+        padding: 3rem 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 100px;
+
+    }
+
+    .titulo__header h2 {
+
+        font-size: 30px;
+        margin: 0 0 0.5 0;
+        font-weight: 700;
+
+    }
+
+    .titulo__header p {
+
+        font-size: 15px;
+        margin: 0;
+        opacity: 0.8;
+
+    }
+
+</style>
+
