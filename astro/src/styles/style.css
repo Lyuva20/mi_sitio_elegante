@@ -8,3 +8,13 @@ body {
 
 }
 
+    /* Estilo por defecto */
+    body {
+    opacity: 1;
+    transition: opacity 0.4s ease;
+    }
+
+    /* Clase para transición de salida */
+    body.page-exit {
+    opacity: 0;
+}

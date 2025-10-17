@@ -10,6 +10,7 @@ import Banner from "../component/banner.astro"
 
 const {titulo, parrafo} = Astro.props;
 const {tituloDos, parrafoDos, boton} = Astro.props;
+const {title, description} = Astro.props;
 
 ---
 
@@ -17,7 +18,7 @@ const {tituloDos, parrafoDos, boton} = Astro.props;
 
 <html lang="es">
 
-<Head/>
+<Head title={title} description={description}/>
 
 <body>
 
