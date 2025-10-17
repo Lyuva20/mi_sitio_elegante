@@ -32,3 +32,44 @@ Se realizo un Pull Request al compañero Jorge añadiendo comentarios identifica
 ## Enlace a la publicación: 
 
 https://lyuva20.github.io/mi_sitio_elegante/
+
+
+# Mi sitio elegante - rama Astro. 
+
+
+Para llevar a cabo este proyecto se ha creado una nueva rama llamada "astro" y se ha mantenido la rama "main" como principal y renombrada como "main-legacy".
+
+En esta nueva rama se ha inicializado un proyecto astro con los siguientes elementos: 
+
+## Layout principal: 
+
+En este archivo se define la estructura principal del sitio web incluyendo componentes globales y aplicando los estilos del proyecto. También recibe astro.props como datos dinámicos para personalizar el contenido de cada página. 
+
+## Componentes con props:
+
+Entre los componentes que conforman las partes reutilizables de la web, hay varios en los que se han utilizado props: 
+
+### Banner.astro: 
+
+Muestra un bloque al final con un título, un parrado y un botón para las páginas home y shop. 
+
+### Header.astro:
+
+Se ha utilizado para todas las páginas menos home, por lo que se ha tenido que incluir con un condicional para que detecte que se han introducido los props para que se utilice en la página. 
+
+### Head.astro: 
+
+Define dinamicamente el contenido de title y description asegurando el SEO básico. 
+
+## Imagenes y enlaces: 
+
+Se ha habilitado la precarga a nivel de enlace en el componente nav. Además, se ha utilizado la etiqueta <Image> y loading="lazy" para el iframe.
+
+## Transiciones: 
+
+El proyecto utiliza transiciones de página con astro:transitions lo que permite cambiar entre rutas sin recargar completamente el sitio. 
+
+## Enlace a la publicación (Neocities):
+
+ https://lyuva20.neocities.org/blog/
+
