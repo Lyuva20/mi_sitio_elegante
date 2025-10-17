@@ -8,6 +8,7 @@ import Header from "../component/header.astro"
 import Banner from "../component/banner.astro"
 
 
+
 const {titulo, parrafo} = Astro.props;
 const {tituloDos, parrafoDos, boton} = Astro.props;
 const {title, description} = Astro.props;
@@ -16,13 +17,14 @@ const {title, description} = Astro.props;
 
 <!DOCTYPE html>
 
-<html lang="es">
+<html lang="es" transition:animate="slide">
 
 <Head title={title} description={description}/>
 
 <body>
 
 <Nav/>
+
 
 {titulo && parrafo ? <Header titulo={titulo} parrafo={parrafo} /> : null}
 
@@ -34,7 +36,7 @@ const {title, description} = Astro.props;
 
 <Footer/>
 
-<script src="../js/main.js"></script>
+
 
 </body>
 </html>

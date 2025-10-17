@@ -1,4 +1,4 @@
-    
+
 let banner = document.getElementById("banner__header");
 let titulo = document.getElementById("banner__titulo");
 let parrafo = document.getElementById("banner__parrafo");
@@ -44,4 +44,3 @@ function actualizarDiapositiva() {
 
 
 actualizarDiapositiva();
-

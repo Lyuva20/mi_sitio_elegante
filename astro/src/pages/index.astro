@@ -5,6 +5,7 @@
 		import gps from '../images/gps.jpg';
 		import page from '../images/page.jpg';
 		import rayitas from '../images/rayitas.jpg';
+    import Carrousel from "../component/carrousel.astro"   
 
 
 ---
@@ -19,22 +20,11 @@ description="Welcome to Mi Sitio Elegante: simple template with elegant design. 
 
 
 
-    <!--Header-->
 
-    <header id="banner__header">
-    
-        <h2 id="banner__titulo"></h2>
-        <p id="banner__parrafo"></p>
-        <button id="banner__boton">Enter</button>
-
-        <div id="banner__clic">
-            <button id="clic__izquierda">←</button>
-            <button id="clic__derecha">→</button>
-        </div>
-
-    </header>
 
     <main>
+
+    <Carrousel/>
 
     <!--Segundo contenedor-->
 
@@ -90,83 +80,6 @@ description="Welcome to Mi Sitio Elegante: simple template with elegant design. 
 
 
 <style>
-
-#banner__header {
-
-    padding: 40px;
-    text-align: center;
-    min-height: 200px;
-    margin: 50px;
-    
-
-}
-
-#banner__titulo {
-
-    font-size: 46px;
-    margin-bottom: 15px;
-    color: var(--colorFuente);
-
-}
-
-#banner__parrafo {
-
-    font-size: 15px;
-    margin-bottom: 25px;
-}
-
-#banner__parrafo, #banner__titulo, #banner__boton{
-
-    color: var(--colorFuente);
-
-}
-
-#banner__boton {
-
-    padding: 10px 20px;
-    font-size: 20px;
-    cursor: pointer;
-    background-color: transparent;
-    border-radius: 2px;
-    border: 2px, solid, var(--colorFuente);
-    
-
-
-}
-
-#banner__boton:hover{
-
-    opacity: .5;
-
-}
-
-#banner__clic {
-
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-
-}
-
-#banner__clic button {
-    
-    border: none;
-    cursor: pointer;
-    background-color: transparent;
-    color: var(--colorFuente);
-    font-size: 25px;
-    
-    
-}
-
-#clic__derecha{
-
-    justify-self: flex-end;
-}
-
-#clic__izquierda{
-
-    justify-self: flex-start;
-}
 
 .banner__segundo{
 

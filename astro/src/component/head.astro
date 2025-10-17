@@ -1,6 +1,7 @@
 ---
 
 const {title, description}= Astro.props;
+import { ClientRouter } from "astro:transitions";
 
 ---
 
@@ -9,6 +10,8 @@ const {title, description}= Astro.props;
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{title}</title>
     <meta name="description" content={description}/>
+    <ClientRouter />
+    <script src="../js/main.js"></script>
 </head>
 
 
