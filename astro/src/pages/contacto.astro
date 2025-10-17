@@ -63,115 +63,117 @@ San Francisco, California 65432</p>
 
 <style>
 
-.contenedor__asides{
+	.contenedor__asides{
 
-	display: grid;
-	grid-template-columns: 65% 35%;
-	height: 500px;
-
-}
-
-.contacto__contenedor {
-	
-	gap: 40px;
-	margin: 50px;
+		display: grid;
+		grid-template-columns: 65% 35%;
+		height: 500px;
 
 	}
 
-.contacto__titulo {
+	.contacto__contenedor {
+		
+		gap: 40px;
+		margin: 50px;
 
-	font-size: 30px;
-	font-weight: bold;
-	color: var(--textoShop);
-	margin-bottom: 25px;
+		}
 
+	.contacto__titulo {
+
+		font-size: 30px;
+		font-weight: bold;
+		color: var(--textoShop);
+		margin-bottom: 25px;
+
+		}
+
+	.contacto__formulario {
+
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+
+		}
+
+	.contacto__inputs {
+
+		display: flex;
+		gap: 20px;
+
+		}
+
+	.contacto__input,
+	.contacto__textarea {
+		
+		width: 100%;
+		padding: 14px;
+		font-size: 18px;
+		border: none;
+		background-color: var(--fondoBlog);
+		border-radius: 3px;
+		
+		}
+
+	.contacto__textarea{
+
+		height: 180px;
+		resize: none;
+
+		
 	}
 
-.contacto__formulario {
+	.contacto__boton {
 
-	display: flex;
-	flex-direction: column;
-	gap: 20px;
+		align-self: flex-end;
+		padding: 10px 22px;
+		font-size: 15px;
+		color: var(--colorBannerFondo);
+		background-color: transparent;
+		border: 2px solid var(--colorBannerFondo);
+		border-radius: 4px;
+		cursor: pointer;
+		font-weight: 600;
+		
+		}
 
-	}
-
-.contacto__inputs {
-
-	display: flex;
-	gap: 20px;
-
-
-
-	}
-
-.contacto__input,
-.contacto__textarea {
-	
-	width: 100%;
-	padding: 14px;
-	font-size: 18px;
-	border: none;
-	background-color: var(--fondoBlog);
-	border-radius: 3px;
-	
-	}
-
-.contacto__textarea{
-
-	height: 180px;
-	resize: none;
-
-	
-}
-
-.contacto__boton {
-
-	align-self: flex-end;
-	padding: 10px 22px;
-	font-size: 15px;
-	color: var(--colorBannerFondo);
-	background-color: transparent;
-	border: 2px solid var(--colorBannerFondo);
-	border-radius: 4px;
-	cursor: pointer;
-	font-weight: 600;
-	
+	.contacto__boton:hover{
+		background-color: var(--colorBannerFondo);
+		opacity: .5;
+		color: var(--colorFondo);
+		
 	}
 
 
 	.info__contenedor {
 
-	color: var(--colorBannerFont);
-	font-weight: 500;
-	font-size: 15px;
-	line-height: 1.7;
-	
-	margin: 50px 
-	
-
-	}
+		color: var(--colorBannerFont);
+		font-weight: 500;
+		font-size: 15px;
+		line-height: 1.7;
+		margin: 50px 
+		
+		}
 
 	.contacto__info h2 {
 
-	font-size: 35px;
-	font-weight: bold;
-	color: var(--textoShop);
-	margin-bottom: 25px;
-	padding: auto;
+		font-size: 35px;
+		font-weight: bold;
+		color: var(--textoShop);
+		margin-bottom: 25px;
+		padding: auto;
 
-	
-
-	}
+		}
 
 	.contacto__info p {
 
-	margin: 20px;
-	padding: auto;
+		margin: 20px;
+		padding: auto;
 
-	}
+		}
 
 	span{
-		font-weight: bold;
-	}
+			font-weight: bold;
+		}
+
 
 </style>

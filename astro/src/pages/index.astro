@@ -100,7 +100,7 @@
 
     padding: 40px;
     text-align: center;
-    min-height: 300px;
+    min-height: 200px;
     margin: 50px;
     
 
@@ -134,26 +134,44 @@
     background-color: transparent;
     border-radius: 2px;
     border: 2px, solid, var(--colorFuente);
+    
 
 
 }
 
 #banner__boton:hover{
+
     opacity: .5;
+
+}
+
+#banner__clic {
+
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+
 }
 
 #banner__clic button {
-    font-size: 20px;
-    padding: 5px 15px;
-    margin: 0 10px;
+    
     border: none;
     cursor: pointer;
     background-color: transparent;
     color: var(--colorFuente);
-
+    font-size: 25px;
+    
+    
 }
 
+#clic__derecha{
 
+    justify-self: flex-end;
+}
+
+#clic__izquierda{
+
+    justify-self: flex-start;
+}
 
 .banner__segundo{
 
@@ -165,8 +183,6 @@
     display: flex;
     justify-content: center;
     
-    
-
 }
 
 .segundo--titulo{
@@ -177,7 +193,6 @@
     width: 600px;
 
 }
-
 
 
 .contenedor__iconos{
@@ -201,7 +216,6 @@
     margin: auto;
     color: var(--colorBannerFont);
 
-
 }
 
 .div--titulo{
@@ -217,7 +231,6 @@
 }
 
 
-
 .ultimo__contenedor{
 
     padding: 40px;
@@ -226,10 +239,8 @@
     margin: 50px;
     background-color: var(--colorBannerFondo);
 
-    
 
 }
-
 
 
 .ultimo__titulo{
